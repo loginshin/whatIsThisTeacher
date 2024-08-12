@@ -25,10 +25,6 @@ async function init() {
     
     const results = await model.classify(video);
     
-    
-    //console에 출력
-    console.log(results[0].className);
-    console.log((results[0].probability * 100).toFixed(2) +'%');
 
         // 계속 바뀌는 결과값을 키워드 변수로 따로 담음
         keywords = results[0].className;
@@ -61,25 +57,7 @@ async function init() {
         }, 1000);
         
 
-      }, 4000);
-
-
-      
-      
-
-      
-      
-  
-
-
-
-
-
-
-
-
-
-
+      }, 5000);
 
 
 
